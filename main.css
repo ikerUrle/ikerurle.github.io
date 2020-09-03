@@ -1,0 +1,356 @@
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(70, 73, 82, 0.9);
+  z-index: 1;
+}
+
+.social {
+  background-color: #fff;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 60%;
+  height: 50%;
+  margin-top: -15%;
+  margin-left: -30%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3%;
+}
+@media only screen and (max-width: 1023px) {
+  .social {
+    flex-direction: column;
+    width: 80%;
+    top: 40%;
+    margin-left: -40%;
+    padding-bottom: 40px;
+    padding-right: 20px;
+  }
+}
+.social::before {
+  background-color: #285fb8;
+  border-radius: 30px;
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  right: -6%;
+  width: 50%;
+  height: 50%;
+  z-index: -1;
+}
+.social img {
+  width: 50%;
+  height: auto;
+}
+@media only screen and (max-width: 1023px) {
+  .social img {
+    width: 60%;
+  }
+}
+.social-buttons {
+  display: inline-block;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-end;
+  width: 100%;
+}
+@media only screen and (max-width: 1023px) {
+  .social-buttons {
+    align-self: flex-start;
+  }
+}
+.social-buttons a {
+  font-size: 80px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  text-decoration: none;
+  padding: 0px 3%;
+}
+.social-buttons i:hover {
+  animation: hover-animation 5s infinite alternate;
+}
+
+.fa-twitter-square {
+  width: 20%;
+  color: #3e78d5;
+}
+.fa-linkedin {
+  width: 20%;
+  color: #1f498e;
+}
+.fa-github-square {
+  width: 20%;
+  color: #0d1e3a;
+}
+
+.social-open-button {
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  padding: 10px 30px;
+  border-radius: 100px;
+  background: #3e78d5;
+  font-size: 5vh;
+  color: #fff;
+  border: none;
+  outline: none;
+  z-index: 2;
+}
+@media only screen and (max-width: 1023px) {
+  .social-open-button {
+    font-size: 0;
+    right: 10px;
+    bottom: 5px;
+  }
+}
+.social-open-button:hover {
+  background: #6895de;
+}
+.social-open-button i {
+  display: none;
+}
+@media only screen and (max-width: 1023px) {
+  .social-open-button i {
+    display: block;
+    font-size: large;
+  }
+}
+
+@keyframes text-animation {
+  from {
+    color: white;
+  }
+  70% {
+    color: black;
+  }
+}
+@keyframes hover-animation {
+  from {
+    color: #6895de;
+  }
+  to {
+    color: #285fb8;
+  }
+}
+.projects, .about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 60px;
+}
+@media only screen and (max-width: 1023px) {
+  .projects, .about {
+    flex-direction: column;
+    height: auto;
+    padding: 0px 10px;
+    padding-bottom: 50px;
+  }
+}
+
+.projects-title, .about-title {
+  color: #fff;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+.projects-title h1, .about-title h1 {
+  font-family: "Charmonman", cursive;
+  font-size: 10vh;
+  z-index: 1;
+}
+@media only screen and (max-width: 1023px) {
+  .projects-title h1, .about-title h1 {
+    font-size: xx-large;
+    text-align: center;
+  }
+}
+
+.projects-content, .about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  flex: 1;
+}
+.projects-content p, .about-content p {
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: medium;
+}
+@media only screen and (min-width: 2560px) {
+  .projects-content p, .about-content p {
+    font-size: x-large;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .projects-content p, .about-content p {
+    margin: 5%;
+  }
+}
+
+.welcome {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #4e5e8e;
+}
+.welcome .header-img {
+  width: 100%;
+  height: 100%;
+}
+.welcome .header-img-m {
+  display: none;
+}
+@media only screen and (max-width: 1023px) {
+  .welcome .header-img {
+    display: none;
+  }
+  .welcome .header-img-m {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 427px) {
+  .welcome .header-img {
+    display: block;
+  }
+  .welcome .header-img-m {
+    display: none;
+  }
+}
+
+.about {
+  background-color: #0a99b3;
+}
+.about-title {
+  color: black;
+}
+.about-title img {
+  max-width: 15%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+@media only screen and (max-width: 1023px) {
+  .about-title img {
+    position: relative;
+    min-width: 30%;
+    right: 20px;
+  }
+}
+.about-content {
+  background: #fff;
+}
+@media only screen and (min-width: 1024px) {
+  .about-content p {
+    margin-left: 20%;
+    margin-right: 5%;
+  }
+}
+.about-content i {
+  font-style: italic;
+}
+
+.projects {
+  background-color: white;
+  padding-bottom: 15vh;
+}
+.projects-title {
+  color: #000;
+}
+.projects-title img {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+  max-width: 40%;
+  width: auto;
+  height: auto;
+}
+@media only screen and (max-width: 1023px) {
+  .projects-title img {
+    position: relative;
+    opacity: 0.6;
+  }
+}
+.projects-content {
+  background-color: #285fb8;
+  color: #fff;
+  text-justify: start;
+}
+.projects-content .fa-github {
+  font-size: 50vh;
+  position: absolute;
+  color: #2392cf;
+}
+@media only screen and (max-width: 1023px) {
+  .projects-content .fa-github {
+    font-size: 40vh;
+  }
+}
+.projects-content p {
+  z-index: 1;
+}
+
+.banner {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  background: #3e78d5;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+  font: italic bold 2vh "Mulish";
+  color: #fff;
+  animation: text-animation 2s ease-out;
+  z-index: 2;
+}
+@media only screen and (max-width: 1023px) {
+  .banner {
+    left: 0%;
+    transform: none;
+    border-radius: 0 20px 0 0;
+  }
+}
+.banner a {
+  animation: text-animation 2s ease-out;
+  text-decoration: none;
+  color: #000;
+}
+.banner a:hover {
+  animation: hover-animation 1s infinite alternate;
+}
