@@ -18,15 +18,14 @@ socialCard.addEventListener("click", toggleSocial);
 topBanner.addEventListener("click", () => scrollPage(1));
 aboutMe.addEventListener("click", () => scrollPage(2));
 
-
 document.addEventListener("wheel", (event) => {
-  var page_pos = Math.floor(window.scrollY / aboutMe.getBoundingClientRect().height);
+  var page_pos = Math.floor(
+    window.scrollY / aboutMe.getBoundingClientRect().height
+  );
   if (event.deltaY > 0) {
     scrollPage(++page_pos);
   } else {
     scrollPage(--page_pos);
   }
 });
-projects.addEventListener("click", toggleSocial);
-
-
+//projects.addEventListener("click", toggleSocial);
