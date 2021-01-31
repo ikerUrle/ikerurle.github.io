@@ -11,79 +11,10 @@
   </head>
 
   <body>
-    <div class="welcome" id="my-banner">
-      <div class="welcome-title">
-        <h2>Hi, I am</h2>
-        <h1>Iker Urlezaga</h1>
-        <h2>Software Developer</h2>
-      </div>
-      <div class="welcome-content">
-        <img src="images/v1.png" />
-      </div>
-    </div>
-
-    <div class="about" id="about-me">
-      <div class="about-title">
-        <h1>About me</h1>
-        <img src="images/about_me.png" />
-      </div>
-
-      <div class="about-content">
-        <p>
-          Hi! I am <strong>Iker</strong>, a
-          <strong>Software Developer</strong> who strongly believes in
-          <strong>Free Open Source Software!</strong> FOSS is the way to go if
-          the goal is to create the best software and the best software
-          developers!
-        </p>
-        <p>
-          I studied <strong>Software Engineering </strong> at
-          <strong> Bilbao's Engineering School</strong> and worked on software
-          related to Industry 4.0. Right now, I am aiming towards becoming a
-          <strong>FullStack Developer </strong>somewhere in the near future.
-        </p>
-        <p>
-          My personal inspiration is to make people aware of the importance of
-          Software and make them realize developing is <strong>FUN!</strong>
-          <del>Or at least can be fun sometimes...</del>
-        </p>
-        <p>
-          My other passion is Music!
-          <strong>I love playing and listening to music!</strong> I've been part
-          of an Orchestra for more than 10 years!
-        </p>
-      </div>
-    </div>
-
-    <div class="projects" id="projects">
-      <div class="projects-title">
-        <h1>My projects</h1>
-        <img src="images/projects.svg" />
-      </div>
-
-      <div class="projects-content">
-        <!-- <p>
-          Right now the most important project I'm involved in, is the
-          <strong>#100DaysOfCode</strong> challenge! Throughout the challenge I
-          am, and will be, building different kind of projects including this
-          one! (as you can see on the banner).
-        </p>
-        <p>
-          I also post a <strong>daily journal</strong> on social media so
-          <strong>follow me!</strong> I plan on posting the progress on this
-          page too but that is a Work in Progress.
-        </p>
-        <p>
-          All of my <strong>public projects</strong> are published on my GitHub
-          account so make sure you give them a look and a
-          <i class="fas fa-star"></i> if you like them!
-        </p>
-        <p>
-          Also, if you are working on an <strong>Open Source</strong> project
-          and need some help let me know,
-          <strong>I am willing to collaborate!!</strong>
-        </p> -->
-
+    <img class="keyboard-img" src="images/HeaderKeyboard.png"/>
+    <img class="main-image" src="images/HeaderImage.png"/>
+    <div class="bottom">
+      <div class="projects">
         <a
           class="project-card pr-1"
           href="https://ikerurle.github.io/super-pang-html5"
@@ -102,49 +33,36 @@
           target="_blank"
           ><h1 class="text">React News</h1></a
         >
-        <a
-          class="project-card"
-          href="https://github.com/ikerUrle"
-          target="_blank"
-          ><h1 class="text">More coming soon!</h1></a
-        >
-
-        <!-- <i class="fab fa-github"></i> -->
       </div>
+    <div class="social-links">
+      <a href="https://twitter.com/ikerUrle" target="_blank">
+        <i class="fab fa-twitter twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ikerurle/" target="_blank">
+        <i class="fab fa-linkedin-in linkedin"></i>
+      </a>
+      <a href="https://github.com/ikerUrle" target="_blank">
+        <i class="fab fa-github github"></i>
+      </a>
+  </div>
     </div>
-
-    <div class="modal">
-      <div class="social">
-        <img src="images/social.svg" />
-        <div class="social-content">
-          <h1>Send some <i class="fas fa-heart" style="color: red"></i></h1>
-          <div class="social-buttons">
-            <a href="https://twitter.com/ikerUrle" target="_blank">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/ikerurle/" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/ikerUrle" target="_blank">
-              <i class="fab fa-github-square"></i>
-            </a>
-          </div>
+  <div class="modal">
+        <div class="social">
+          <a href="https://twitter.com/ikerUrle" target="_blank">
+            <i class="fab fa-twitter-square twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ikerurle/" target="_blank">
+            <i class="fab fa-linkedin linkedin"></i>
+          </a>
+          <a href="https://github.com/ikerUrle" target="_blank">
+            <i class="fab fa-github-square github"></i>
+          </a>
         </div>
-      </div>
-    </div>
+</div>
 
     <button class="social-open-button" onclick="toggleSocial()">
-      Follow me!<i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
     </button>
-
-    <div class="banner">
-      Part of
-      <a href="https://github.com/ikerUrle/100-days-of-code" target="_blank"
-        >#100DaysOfCode</a
-      >
-      challenge
-    </div>
-    <script src="main.js"></script>
+    <script src="main.js"></script> 
   </body>
-  <!-- Social icon by undraw.co -->
 </html>
