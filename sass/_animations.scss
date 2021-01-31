@@ -1,0 +1,24 @@
+@keyframes text-animation {
+  from {
+    color: lighten($main, 80%);
+  }
+  70% {
+    color: darken($main, 60%);
+  }
+}
+@keyframes hover-animation {
+  from {
+    color: lighten($main, 20%);
+  }
+  to {
+    color: $main;
+  }
+}
+@keyframes size-animation {
+  from {
+    font-size: 200%;
+  }
+  to {
+    font-size: 150%;
+  }
+}
