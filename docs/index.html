@@ -8,61 +8,43 @@
     <meta name="description" content="Personal site" />
     <link rel="icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/petite-vue" defer init></script>
   </head>
 
   <body>
-    <img class="keyboard-img" src="images/HeaderKeyboard.png"/>
-    <img class="main-image" src="images/HeaderImage.png"/>
-    <div class="bottom">
-      <div class="projects">
-        <a
-          class="project-card pr-1"
-          href="https://ikerurle.github.io/super-pang-html5"
-          target="_blank"
-          ><h1 class="text">Super Pang!</h1></a
-        >
-        <a
-          class="project-card pr-2"
-          href="https://ikerurle.github.io/random-picker"
-          target="_blank"
-          ><h1 class="text">Random Picker</h1></a
-        >
-        <a
-          class="project-card pr-3"
-          href="https://ikerurle.github.io/news-page"
-          target="_blank"
-          ><h1 class="text">React News</h1></a
-        >
-      </div>
-    <div class="social-links">
-      <a href="https://twitter.com/ikerUrle" target="_blank">
-        <i class="fab fa-twitter twitter"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ikerurle/" target="_blank">
-        <i class="fab fa-linkedin-in linkedin"></i>
-      </a>
-      <a href="https://github.com/ikerUrle" target="_blank">
-        <i class="fab fa-github github"></i>
-      </a>
-  </div>
+    <div class="row">
+      <img v-for="(a,index) in 14" :key="index" class="key-1" :src="`images/topKey${index}.png`" />
     </div>
-  <div class="modal">
-        <div class="social">
-          <a href="https://twitter.com/ikerUrle" target="_blank">
-            <i class="fab fa-twitter-square twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/ikerurle/" target="_blank">
-            <i class="fab fa-linkedin linkedin"></i>
-          </a>
-          <a href="https://github.com/ikerUrle" target="_blank">
-            <i class="fab fa-github-square github"></i>
-          </a>
-        </div>
-</div>
-
-    <button class="social-open-button" onclick="toggleSocial()">
-      <i class="fas fa-heart"></i>
-    </button>
+    <div class="row">
+      <img v-for="(a,index) in 6" :key="index" class="key-2" :src="`images/firstKey${index}.png`" />
+      <img v-for="(a,index) in 7" :key="index" class="key-2" src="images/Key.png" />
+      <img class="key-2 w-15" src="images/firstKeyBackspace.png" />
+    </div>
+    <div class="row">
+      <img class="key-2 w-13" src="images/TabKey.png" />
+      <img v-for="(a,index) in 13" :key="index" class="key-2" src="images/Key.png" />
+    </div>
+    <div class="row">
+      <img class="key-2 w-14" src="images/capsLock.png" />
+      <img v-for="(a,index) in 11" :key="index" class="key-2" src="images/Key.png" />
+      <img class="key-2 w-14" src="images/enter.png" />
+    </div>
+    <div class="row">
+      <img class="key-2 w-15" src="images/lshift.png" />
+      <img v-for="(a,index) in 10" :key="index" class="key-2" src="images/Key.png" />
+      <img class="key-2 w-15" src="images/rShift.png" />
+    </div>
+    <div class="row">
+      <img class="key-2 w-15" src="images/lctrl.png" />
+      <img class="key-2 " src="images/lWin.png" />
+      <img class="key-2 w-13" src="images/lfn.png" />
+      <img class="key-2 w-15" src="images/lAlt.png" />
+      <img class="key-2 w-15" style="width:600%" src="images/space.png" />
+      <img class="key-2 w-15" src="images/altGr.png" />
+      <img class="key-2 w-15" src="images/rWin.png" />
+      <img class="key-2" style="width:400%" src="images/arrows.png" />
+    </div>
+    <img class="keyboard-img" src="images/HeaderKeyboard.png"/>
     <script src="main.js"></script> 
   </body>
 </html>
