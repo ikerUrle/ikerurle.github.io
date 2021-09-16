@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "sass": "sass sass/main.scss public/main.css --watch --no-source-map"
+    "sass": "sass sass/main.scss docs/main.css --watch --no-source-map"
   },
   "repository": {
     "type": "git",
