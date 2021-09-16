@@ -1,26 +1,16 @@
 {
-  "name": "personal-website",
+  "name": "ikerurle-personal",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
     "sass": "sass sass/main.scss public/main.css --watch --no-source-map"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ikerUrle/personal-website.git"
+    "url": "git+https://github.com/ikerUrle/ikerurle.github.io"
   },
-  "author": "",
+  "author": "Iker Urlezaga",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ikerUrle/personal-website/issues"
-  },
-  "homepage": "https://github.com/ikerUrle/personal-website#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
   "devDependencies": {
     "node-sass": "^5.0.0",
     "sass": "^1.32.5"
