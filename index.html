@@ -12,6 +12,11 @@
   </head>
 
   <body>
+    <script>
+      const openGithub = () => { window.open("https://github.com/ikerUrle") }
+      const openTwitter = () => { window.open("https://twitter.com/ikerUrle") }
+      const openLinkedin = () => { window.open("https://www.linkedin.com/in/ikerurle/") }
+    </script>
     <div class="keyboard">
 
     <div class="row">
@@ -37,9 +42,9 @@
       <img class="key w-15" src="images/lshift.png" />
       <img v-for="(a,index) in 3" :key="index" class="key" :src="`images/forthKey${index}.png`" />
       <img v-for="(a,index) in 4" :key="index" class="key" src="images/Key.png" />
-      <img class="key" src="images/keyGithub.png" />
-      <img class="key" src="images/keyTwitter.png" />
-      <img class="key" src="images/keyLinkedin.png" />
+      <img class="key" src="images/keyGithub.png" @click="openGithub"/>
+      <img class="key" src="images/keyTwitter.png" @click="openTwitter" />
+      <img class="key" src="images/keyLinkedin.png" @click="openLinkedin"/>
       <img class="key w-15" src="images/rShift.png" />
     </div>
     <div class="row last-row">

@@ -8,6 +8,8 @@
 
 body{
   background-color: #44b0b0;
+  display: flex;
+  justify-content: center;
 }
 .keyboard {
   margin: 0;
@@ -21,6 +23,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 1500px;
+  gap:5px;
 }
 
 * {
