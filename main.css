@@ -1,0 +1,57 @@
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+  background-color: #44b0b0;
+}
+.keyboard {
+  margin: 0;
+  margin-top:20px;
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+  background-image: url('images/background.png');
+  background-size: 100% 100% ;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+.row {
+  flex:1;
+  display: flex;
+  padding: 2px 0;
+  gap: 10px;
+}
+
+.last-row {
+  max-height: 100px;
+}
+.key {
+  width:100%;
+}
+.key:hover {
+  transform: scale(1.1);
+}
+
+.w-13 {
+  width:140%;
+}
+.w-14 {
+  width:155%;
+}
+.w-15 {
+  width: 170%;
+}
+

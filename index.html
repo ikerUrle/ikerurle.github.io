@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Iker Urlezaga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <meta name="description" content="Personal site" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://unpkg.com/petite-vue" defer init></script>
+  </head>
+
+  <body>
+    <div class="keyboard">
+
+    <div class="row">
+      <img v-for="(a,index) in 14" :key="index" class="key" :src="`images/topKey${index}.png`" />
+    </div>
+    <div class="row">
+      <img v-for="(a,index) in 6" :key="index" class="key" :src="`images/firstKey${index}.png`" />
+      <img v-for="(a,index) in 7" :key="index" class="key" src="images/Key.png" />
+      <img class="key w-15" src="images/firstKeyBackspace.png" />
+    </div>
+    <div class="row">
+      <img class="key w-13" src="images/TabKey.png" />
+      <img v-for="(a,index) in 4" :key="index" class="key" :src="`images/secondKey${index}.png`" />
+      <img v-for="(a,index) in 9" :key="index" class="key" src="images/Key.png" />
+    </div>
+    <div class="row">
+      <img class="key w-14" src="images/capsLock.png" />
+      <img v-for="(a,index) in 5" :key="index" class="key" :src="`images/thirdKey${index}.png`" />
+      <img v-for="(a,index) in 6" :key="index" class="key" src="images/Key.png" />
+      <img class="key w-14" src="images/enter.png" />
+    </div>
+    <div class="row">
+      <img class="key w-15" src="images/lshift.png" />
+      <img v-for="(a,index) in 3" :key="index" class="key" :src="`images/forthKey${index}.png`" />
+      <img v-for="(a,index) in 4" :key="index" class="key" src="images/Key.png" />
+      <img class="key" src="images/keyGithub.png" />
+      <img class="key" src="images/keyTwitter.png" />
+      <img class="key" src="images/keyLinkedin.png" />
+      <img class="key w-15" src="images/rShift.png" />
+    </div>
+    <div class="row last-row">
+      <img class="key w-15" src="images/lctrl.png" />
+      <img class="key " src="images/lWin.png" />
+      <img class="key w-14" src="images/lfn.png" />
+      <img class="key w-15" src="images/lAlt.png" />
+      <img class="key w-15" style="width:600%" src="images/space.png" />
+      <img class="key w-14" src="images/altGr.png" />
+      <img class="key w-13" src="images/rWin.png" />
+      <img class="key" style="width:400%" src="images/arrows.png" />
+    </div>
+    </div>
+  </body>
+</html>
