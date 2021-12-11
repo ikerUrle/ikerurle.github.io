@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" ></div>
     <title>Iker Urlezaga</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <meta name="description" content="Personal site" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="manifest" href="manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" ></div>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" ></div>
+    <meta name="description" content="Personal site" ></div>
+    <link rel="icon" href="favicon.ico" ></div>
+    <link rel="manifest" href="manifest.json" ></div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b3bcb5e585.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/petite-vue" defer init></script>
   </head>
 
   <body>
-    <script>
-      const openGithub = () => { window.open("https://github.com/ikerUrle") }
-      const openTwitter = () => { window.open("https://twitter.com/ikerUrle") }
-      const openLinkedin = () => { window.open("https://www.linkedin.com/in/ikerurle/") }
-    </script>
     <div class="keyboard">
-
-    <div class="row">
-      <img v-for="(a,index) in 14" :key="index" class="key" :src="`images/topKey${index}.png`" />
+    <!-- <div class="row">
+      <div v-for="(a,index) in 14" :key="index" class="key"  ></div>
+    </div> -->
+    <div class="row first-row">
+      <div class="key"></div>
+      <div class="key text-4xl opacity-100 text-black">
+        <i class="fab fa-js-square"></i>
+      </div>
+      <div class="key text-4xl opacity-100 text-black">
+        <i class="fab fa-vuejs"></i>
+      </div>
+      <div class="key text-4xl opacity-100 text-black">
+        <i class="fab fa-css3-alt"></i>
+      </div>
+      <div class="key text-4xl opacity-100 text-black">
+        <i class="fab fa-sass"></i>
+      </div>
+      <div class="key text-4xl opacity-100 text-black">
+        <i class="fab fa-git-alt"></i>
+      </div>
+      <div v-for="(a,index) in 6" :key="index" class="key"  ></div>
+      <div class="key text-right w-[200%]">backspace</div>
     </div>
-    <div class="row">
-      <img v-for="(a,index) in 6" :key="index" class="key" :src="`images/firstKey${index}.png`" />
-      <img v-for="(a,index) in 7" :key="index" class="key" src="images/Key.png" />
-      <img class="key w-15" src="images/firstKeyBackspace.png" />
+    <div class="row second-row">
+      <div class="key text-left">tab</div>
+      <div v-for="(a,index) in 'iker'.split('')" :key="index" class="key text-4xl opacity-100" >{{a}}</div>
+      <div v-for="(a,index) in 9" :key="index" class="key"  ></div>
     </div>
-    <div class="row">
-      <img class="key w-13" src="images/TabKey.png" />
-      <img v-for="(a,index) in 4" :key="index" class="key" :src="`images/secondKey${index}.png`" />
-      <img v-for="(a,index) in 9" :key="index" class="key" src="images/Key.png" />
+    <div class="row third-row">
+      <div class="key text-left">capslock</div>
+      <div v-for="(a,index) in 'front'.split('')" :key="index" class="key text-4xl text-black opacity-100">{{a}}</div>
+      <div v-for="(a,index) in 6" :key="index" class="key"  ></div>
+      <div class="key text-right">enter</div>
     </div>
-    <div class="row">
-      <img class="key w-14" src="images/capsLock.png" />
-      <img v-for="(a,index) in 5" :key="index" class="key" :src="`images/thirdKey${index}.png`" />
-      <img v-for="(a,index) in 6" :key="index" class="key" src="images/Key.png" />
-      <img class="key w-14" src="images/enter.png" />
+    <div class="row fourth-row">
+      <div class="key text-left">shift</div>
+      <div v-for="(a,index) in 'dev'.split('')" :key="index" class="key text-4xl opacity-100">{{a}}</div>
+      <div v-for="(a,index) in 4" :key="index" class="key"  ></div>
+      <div class="key"></div>
+      <a class="key text-4xl text-black opacity-100" href="https://github.com/ikerUrle">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="key text-4xl text-black opacity-100" href="https://twitter.com/ikerUrle">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="key text-4xl text-black opacity-100" href="https://www.linkedin.com/in/ikerurle">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <div class="key text-right">shift</div>
     </div>
-    <div class="row">
-      <img class="key w-15" src="images/lshift.png" />
-      <img v-for="(a,index) in 3" :key="index" class="key" :src="`images/forthKey${index}.png`" />
-      <img v-for="(a,index) in 4" :key="index" class="key" src="images/Key.png" />
-      <img class="key" src="images/keyGithub.png" @click="openGithub"/>
-      <img class="key" src="images/keyTwitter.png" @click="openTwitter" />
-      <img class="key" src="images/keyLinkedin.png" @click="openLinkedin"/>
-      <img class="key w-15" src="images/rShift.png" />
-    </div>
-    <div class="row last-row">
-      <img class="key w-15" src="images/lctrl.png" />
-      <img class="key " src="images/lWin.png" />
-      <img class="key w-14" src="images/lfn.png" />
-      <img class="key w-15" src="images/lAlt.png" />
-      <img class="key w-15" style="width:600%" src="images/space.png" />
-      <img class="key w-14" src="images/altGr.png" />
-      <img class="key w-13" src="images/rWin.png" />
-      <img class="key" style="width:400%" src="images/arrows.png" />
+    <div class="row fifth-row">
+      <div class="key text-left">ctrl</div>
+      <div class="key text-left">
+        <i class="fab fa-linux"></i>
+      </div>
+      <div class="key text-left">fn</div>
+      <div class="key text-left">alt</div>
+      <div class="key" style="width: 600%;">space</div>
+      <div class="key text-right">altgr</div>
+      <div class="key text-right">
+        <i class="fab fa-linux"></i>
+      </div>
+      <div class="flex w-[300%] items-end">
+        <i class="fas fa-long-arrow-alt-left key key-half"></i>
+        <div class="height-min flex-grow w-[100%]">
+          <i class="fas fa-long-arrow-alt-up key key-half"></i>
+          <i class="fas fa-long-arrow-alt-down key key-half"></i>
+        </div>
+        <i class="fas fa-long-arrow-alt-right key key-half"></i>
+      </div>
     </div>
     </div>
   </body>
