@@ -11,59 +11,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b3bcb5e585.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/petite-vue" defer init></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   </head>
 
   <body>
     <div class="keyboard">
-    <!-- <div class="row">
-      <div v-for="(a,index) in 14" :key="index" class="key"  ></div>
-    </div> -->
+    <div class="row ">
+      <div v-for="(a,index) in 14" :key="index" class="key h-8"  ></div>
+    </div>
     <div class="row first-row">
       <div class="key"></div>
-      <div class="key text-4xl opacity-100 text-black">
-        <i class="fab fa-js-square"></i>
+      <div class="key text-4xl opacity-100 text-black flex items-center justify-center">
+        <span class="iconify grow-[5] shrink-0" data-icon="vscode-icons:file-type-vue"></span>
+        <span class="iconify grow-[4]" data-icon="vscode-icons:file-type-vite"></span>
       </div>
-      <div class="key text-4xl opacity-100 text-black">
-        <i class="fab fa-vuejs"></i>
+      <div class="key text-4xl opacity-100 text-black flex items-center justify-center">
+        <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span>
       </div>
-      <div class="key text-4xl opacity-100 text-black">
-        <i class="fab fa-css3-alt"></i>
+      <!-- <div class="key text-4xl opacity-100 text-black flex items-center justify-center">
+        <span class="iconify" data-icon="vscode-icons:file-type-css"></span>
+      </div> -->
+      <div class="key text-4xl opacity-100 text-black flex items-center justify-center">
+        <span class="iconify" data-icon="vscode-icons:file-type-sass"></span>
       </div>
-      <div class="key text-4xl opacity-100 text-black">
-        <i class="fab fa-sass"></i>
+      <div class="key text-4xl opacity-100 text-black flex items-center justify-center">
+        <span class="iconify" data-icon="vscode-icons:file-type-git"></span>
       </div>
-      <div class="key text-4xl opacity-100 text-black">
-        <i class="fab fa-git-alt"></i>
+      <div class="key text-4xl opacity-100 text-black flex items-center justify-center">
+        <span class="iconify" data-icon="vscode-icons:file-type-python"></span>
       </div>
-      <div v-for="(a,index) in 6" :key="index" class="key"  ></div>
-      <div class="key text-right w-[200%]">backspace</div>
+      <div v-for="(a,index) in 7" :key="index" class="key"  ></div>
+      <div class="key text-right w-[200%] leading-10">backspace</div>
     </div>
     <div class="row second-row">
-      <div class="key text-left">tab</div>
+      <div class="key text-left leading-10">tab</div>
       <div v-for="(a,index) in 'iker'.split('')" :key="index" class="key text-4xl opacity-100" >{{a}}</div>
       <div v-for="(a,index) in 9" :key="index" class="key"  ></div>
     </div>
     <div class="row third-row">
-      <div class="key text-left">capslock</div>
+      <div class="key text-left leading-10">capslock</div>
       <div v-for="(a,index) in 'front'.split('')" :key="index" class="key text-4xl text-black opacity-100">{{a}}</div>
       <div v-for="(a,index) in 6" :key="index" class="key"  ></div>
-      <div class="key text-right">enter</div>
+      <div class="key text-right leading-10">enter</div>
     </div>
     <div class="row fourth-row">
-      <div class="key text-left">shift</div>
+      <div class="key text-left leading-10">shift</div>
       <div v-for="(a,index) in 'dev'.split('')" :key="index" class="key text-4xl opacity-100">{{a}}</div>
       <div v-for="(a,index) in 4" :key="index" class="key"  ></div>
       <div class="key"></div>
-      <a class="key text-4xl text-black opacity-100" href="https://github.com/ikerUrle">
-        <i class="fab fa-github"></i>
+      <a class="key text-4xl opacity-100 text-black flex items-center justify-center"  href="https://github.com/ikerUrle">
+        <span class="iconify" data-icon="logos:github-icon"></span>
       </a>
-      <a class="key text-4xl text-black opacity-100" href="https://twitter.com/ikerUrle">
-        <i class="fab fa-twitter"></i>
+      <a class="key text-4xl opacity-100 text-black flex items-center justify-center"  href="https://twitter.com/ikerUrle">
+        <span class="iconify" data-icon="logos:twitter"></span>
       </a>
-      <a class="key text-4xl text-black opacity-100" href="https://www.linkedin.com/in/ikerurle">
-        <i class="fab fa-linkedin-in"></i>
+      <a class="key text-4xl opacity-100 text-black flex items-center justify-center"  href="https://www.linkedin.com/in/ikerurle">
+        <span class="iconify" data-icon="logos:linkedin-icon"></span>
       </a>
-      <div class="key text-right">shift</div>
+      <div class="key text-right leading-10 w-[200%]">shift</div>
     </div>
     <div class="row fifth-row">
       <div class="key text-left">ctrl</div>
