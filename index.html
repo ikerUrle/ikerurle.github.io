@@ -16,11 +16,11 @@
 
   <body>
     <div class="keyboard">
-    <div class="row ">
+    <div class="hidden xl:flex row">
       <div v-for="(a,index) in 14" :key="index" class="key h-8"  ></div>
     </div>
     <div class="row first-row">
-      <div class="key"></div>
+      <div class="hidden xl:block key"></div>
       <div class="key text-4xl opacity-100 text-black flex items-center justify-center">
         <span class="iconify grow-[5] shrink-0" data-icon="vscode-icons:file-type-vue"></span>
         <span class="iconify grow-[4]" data-icon="vscode-icons:file-type-vite"></span>
@@ -40,37 +40,48 @@
       <div class="key text-4xl opacity-100 text-black flex items-center justify-center">
         <span class="iconify" data-icon="vscode-icons:file-type-python"></span>
       </div>
-      <div v-for="(a,index) in 7" :key="index" class="key"  ></div>
-      <div class="key text-right w-[200%] leading-10">backspace</div>
+      <div v-for="(a,index) in 7" :key="index" class="hidden xl:block key"  ></div>
+      <div class="key text-right w-[200%] leading-10 hidden xl:block ">backspace</div>
     </div>
     <div class="row second-row">
-      <div class="key text-left leading-10">tab</div>
-      <div v-for="(a,index) in 'iker'.split('')" :key="index" class="key text-4xl opacity-100" >{{a}}</div>
-      <div v-for="(a,index) in 9" :key="index" class="key"  ></div>
+      <div class="key text-left leading-10 hidden xl:block">tab</div>
+      <div v-for="(a,index) in 'iker'.split('')" :key="index" class="key text-4xl opacity-100 " >{{a}}</div>
+      <div v-for="(a,index) in 9" :key="index" class="key hidden xl:block"  ></div>
     </div>
     <div class="row third-row">
-      <div class="key text-left leading-10">capslock</div>
+      <div class="key text-left leading-10 hidden xl:block">capslock</div>
       <div v-for="(a,index) in 'front'.split('')" :key="index" class="key text-4xl text-black opacity-100">{{a}}</div>
-      <div v-for="(a,index) in 6" :key="index" class="key"  ></div>
-      <div class="key text-right leading-10">enter</div>
+      <div v-for="(a,index) in 6" :key="index" class="key hidden xl:block"  ></div>
+      <div class="key text-right leading-10 hidden xl:block">enter</div>
     </div>
     <div class="row fourth-row">
-      <div class="key text-left leading-10">shift</div>
+      <div class="key text-left leading-10 hidden xl:block">shift</div>
       <div v-for="(a,index) in 'dev'.split('')" :key="index" class="key text-4xl opacity-100">{{a}}</div>
-      <div v-for="(a,index) in 4" :key="index" class="key"  ></div>
-      <div class="key"></div>
-      <a class="key text-4xl opacity-100 text-black flex items-center justify-center"  href="https://github.com/ikerUrle">
+      <div v-for="(a,index) in 4" :key="index" class="key hidden xl:block"  ></div>
+      <div class="key hidden xl:block"></div>
+      <a class="key text-4xl opacity-100 text-black flex items-center justify-center hidden xl:flex"  href="https://github.com/ikerUrle">
         <span class="iconify" data-icon="logos:github-icon"></span>
       </a>
-      <a class="key text-4xl opacity-100 text-black flex items-center justify-center"  href="https://twitter.com/ikerUrle">
+      <a class="key text-4xl opacity-100 text-black flex items-center justify-center hidden xl:flex"  href="https://twitter.com/ikerUrle">
         <span class="iconify" data-icon="logos:twitter"></span>
       </a>
-      <a class="key text-4xl opacity-100 text-black flex items-center justify-center"  href="https://www.linkedin.com/in/ikerurle">
+      <a class="key text-4xl opacity-100 text-black flex items-center justify-center hidden xl:flex"  href="https://www.linkedin.com/in/ikerurle">
         <span class="iconify" data-icon="logos:linkedin-icon"></span>
       </a>
-      <div class="key text-right leading-10 w-[200%]">shift</div>
+      <div class="key text-right leading-10 w-[200%] hidden xl:block">shift</div>
     </div>
-    <div class="row fifth-row">
+    <div class="row fifth-row xl:hidden">
+    <a class="key text-4xl opacity-100 text-black flex items-center justify-center"  href="https://github.com/ikerUrle">
+      <span class="iconify" data-icon="logos:github-icon"></span>
+    </a>
+    <a class="key text-4xl opacity-100 text-black flex items-center justify-center"  href="https://twitter.com/ikerUrle">
+      <span class="iconify" data-icon="logos:twitter"></span>
+    </a>
+    <a class="key text-4xl opacity-100 text-black flex items-center justify-center"  href="https://www.linkedin.com/in/ikerurle">
+      <span class="iconify" data-icon="logos:linkedin-icon"></span>
+    </a>
+    </div>
+    <div class="row fifth-row hidden xl:flex">
       <div class="key text-left">ctrl</div>
       <div class="key text-left">
         <i class="fab fa-linux"></i>
